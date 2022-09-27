@@ -1,9 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header";
+import Meme from "./components/Meme";
 
 function App() {
-  return <Header />;
+  return (
+    <div>
+      <Header />
+      <Meme />
+    </div>
+  );
 }
 
 export default App;
