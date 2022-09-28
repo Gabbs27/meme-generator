@@ -8,6 +8,7 @@ export default function Meme() {
 
   function getMeme() {
     console.log(mems);
+    
   }
   return (
     <main>
