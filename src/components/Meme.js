@@ -1,12 +1,16 @@
-import React from "react";
+/* eslint-disable no-const-assign */
+import React, { useState } from "react";
 import memesData from "../memesData";
 
 export default function Meme() {
+  const [memeImage, setMemeImage] = useState("");
+
   function getMeme() {
     const memesArray = memesData.data.memes;
     const randomNumber = Math.floor(Math.random() * memesArray.length);
-    let url = memesArray[randomNumber].url;
-    console.log(url);
+    setMemeImage(memesArray[randomNumber].url);
+
+    console.log(memeImage);
   }
   return (
     <main>
@@ -16,6 +20,8 @@ export default function Meme() {
         <button onClick={getMeme} className='form--button'>
           Get a new meme image 🖼
         </button>
+
+        <img src={memeImage} alt='meme' className='meme--image' />
       </div>
     </main>
   );
