@@ -7,21 +7,19 @@ body {
   margin: 0;
 }
 
-main {
-  padding: 36px;
-}
 
 .header {
   display: flex;
   align-items: center;
   height: 65px;
-  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
-  color: white;
+  background: white;
+  color: #FFC701;
   padding: 20px;
 }
 
 .header--image {
-  height: 100%;
+  height: 260%;
+  weight: 1900%;
   margin-right: 6px;
 }
 
@@ -35,30 +33,101 @@ main {
   font-weight: 500;
 }
 
+.main {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-gap: 1rem;
+  align-items: center;
+  justify-items: center;
+  min-height: 100vh;
+  background-color: #282c34;
+  color: white;
+  font-size: calc(10px + 2vmin);
+  padding: 1rem;
+}
+
 .form {
   display: grid;
-  grid-template: 40px 40px / 1fr 1fr;
-  gap: 17px;
+  grid-template-rows: auto auto auto;
+  grid-gap: 1rem;
+  justify-items: center;
+  text-align: center;
 }
 
 .form--input {
-  font-family: "Karla", sans-serif;
-  border-radius: 5px;
-  border: 1px solid #D5D4D8;
-  text-indent: 5px;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: inherit;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+.meme--image {
+  width: 75%;
+  height: 100%;
+  max-width: 100%;
+  border: 2px solid white;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
 }
 
 .form--button {
-  grid-column: 1 / -1;
-  font-family: "Karla", sans-serif;
-  border-radius: 5px;
-  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
-  color: white;
+  padding: 0.5rem;
+  font-size: inherit;
+  border-radius: 0.25rem;
   border: none;
+  background-color: #FFC701;
+  color: #282c34;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+.form--button:hover {
+  background-color: #282c34;
+  color: #61dafb;
+}
+
 
 .meme--image{
 
   max-width: 100%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:color{
+  color:#FFC701;
+}
+
+.footer--t{
+  position: none;
+  left:0;
+  bottom:0;
+  right:0;
+  text-align: center;
+  background-color:white;
+  color:#FFC701;
+  }
+.footer--buttons  {
+  position: none;
+  margin-bottom: 5px;
+}
+
+.footer--text{
+  position: none;
+ margin-bottom: 5px;
 }
