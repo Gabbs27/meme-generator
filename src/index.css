@@ -63,7 +63,7 @@ body {
 }
 
 .meme--image {
-  width: 100%;
+  width: 75%;
   height: 100%;
   max-width: 100%;
   border: 2px solid white;
@@ -111,4 +111,23 @@ a:active {
 
 a:color{
   color:#FFC701;
+}
+
+.footer--t{
+  position: none;
+  left:0;
+  bottom:0;
+  right:0;
+  text-align: center;
+  background-color:white;
+  color:#FFC701;
+  }
+.footer--buttons  {
+  position: none;
+  margin-bottom: 5px;
+}
+
+.footer--text{
+  position: none;
+ margin-bottom: 5px;
 }
